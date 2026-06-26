@@ -51,8 +51,8 @@ public class ATM {
                         double withdrawalAmount = scanner.nextDouble(); 
                         currentAccount.withdraw(withdrawalAmount);
                         break; 
-                case 4: System.out.println("Transaction history coming soon"); 
-                        break; 
+                case 4: currentAccount.printHistory();
+                        break;
                 case 5: System.out.println("Exiting the program"); 
                         currentAccount = null; 
                         break; 
